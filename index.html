@@ -286,7 +286,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
   .offers{grid-template-columns:minmax(0,1fr)}
   .flow{grid-template-columns:repeat(2,minmax(0,1fr))}
   nav a:not(.nav-cta):not([href="#work"]){display:none}
-  nav{gap:16px}
+  nav{gap:14px;flex-wrap:nowrap}
+  nav .nav-cta{padding:8px 14px;white-space:nowrap}
+  nav a{white-space:nowrap}
 }
 @media (max-width:520px){
   .frames{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
